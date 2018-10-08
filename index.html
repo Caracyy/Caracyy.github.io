@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+
+
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('About', this, 'blue')" id="defaultOpen">About</button>
+
+    <h1>THE MACHINE</h1>
+    <p>AND US</p>
+    <button>VOTE</button>
+  </div>
+</div>
+
+<div id="Home" class="tabcontent">
+  <h3>The Machines Are Watching On Us</h3>
+  <p>
+  In recent years, we as human has a huge population of using the phones. Not only phones, we use laptop and many electronic devices with camera all the time. Undoubtedly, these devices bring us convince,and they help our life become more efficient. At the same time, these devices become the monitors that watching on us which is weird. </p>
+</div>
+
+<img src="image/1.jpg" alt="1" class="image">
+
+<div id="About" class="tabcontent">
+  <h3>The Machine Stop</h3>
+  <p>The Machine Stop
+
+  Regarding “The Machine Stop”, what happened is human are being controlled by the machine, and the machine becomes the new god for human at some point. Do you feel comfortable with being watched by machines all the time? Imagining these “machines” are the eyes that are watching on you, will you still want to carry your machine all the time? </p> 
+</div>
+
+    <div class="hero-text">
+    <div class="text">Watch Out</div>
+  </div>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+
+document.getElementById("defaultOpen").click();
+</script>
+
+     
+</body>
+</html> 
+
+
